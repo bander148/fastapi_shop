@@ -5,7 +5,7 @@ class Settings(BaseSettings):
     app_name: str = "FastAPI Shop"
     # позволяет видеть ошибки
     debug: bool = False
-    database_uri: str = "sqlite:///./shop.db"
+    database_url: str = "sqlite:///./shop.db"
     # пути от которых принимаются бэкенд запросы
     cors_origins: list = [
         "http://localhost:5173",
